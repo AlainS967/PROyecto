@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="centrado-vertical">
+    <div class="marco">
+      <!-- Campo para ingresar correo -->
+      <ion-item>
+        <ion-input [(ngModel)]="email" label="Correo" label-placement="floating" fill="solid" placeholder="Ingresa tu correo"></ion-input>
+      </ion-item>
+
+      <div class="alinear-centro">
+        <ion-button (click)="verificarCorreo()">
+          Verificar Correo
+        </ion-button>
+      </div>
+
+      <div class="alinear-centro">
+        <ion-button (click)="volver()" color="light">
+          Volver al Ingreso
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

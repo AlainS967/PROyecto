@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Contraseña Recuperada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center">
+   <!-- Mostrar la contraseña del usuario -->
+   <p>Tu contraseña es: <strong>{{ usuario?.password }}</strong></p>
+
+   <!-- Imagen de éxito -->
+   <img src="../../../assets/img/hombre-feliz-mochila-auriculares-sosteniendo-computadora-portatil-sonriendo-vitores-ganar-triunfando-sobre-tu.jpg" class="foto-portada"/>
+
+   <!-- Botón para redirigir a la página de Iniciar Sesión -->
+   <ion-button fill="clear" (click)="volver()">Iniciar Sesión</ion-button>
+</ion-content>

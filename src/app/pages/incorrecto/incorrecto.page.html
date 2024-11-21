@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Respuesta Incorrecta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center">
+   <!-- Mostrar la contraseña del usuario -->
+   <p> ¡Lo sentimos pero los datos ingresados no son correctos!</p>
+
+   <!-- Imagen de éxito -->
+   <img src="..\..\assets\img\cierrese-encima-retrato-hombre-barbudo-caucasico-maduro-camiseta-azul-sosteniendo-mano-frente-mejilla-que-parece-cansada-aburrida-despues-dia-largo-trabajo.jpg" class="foto-portada"/>
+
+   <!-- Botón para redirigir a la página de Iniciar Sesión -->
+   <ion-button fill="clear" (click)="volver()">Iniciar Sesión</ion-button>
+</ion-content>

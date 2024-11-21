@@ -1,0 +1,39 @@
+ion-content {
+  --background: url('/assets/img/Palacio-Eguiguren.png') no-repeat center center/cover;
+}
+
+.centrado-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 56px); // Ajusta para que no se superponga con el header
+}
+
+.marco {
+  border: 3px solid gray;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.8); // Fondo semi-transparente
+  border-radius: 8px;
+}
+
+.alinear-centro {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.animacion-texto {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moverTexto 5s linear infinite;
+}
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
