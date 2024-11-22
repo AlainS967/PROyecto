@@ -1,35 +1,19 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'registroapp',
+  appName: 'angrydinosaur',
   webDir: 'www',
-  server: {
-    androidScheme: 'https'
-  },
-  // CGV-INI: Se debe agregar el soporte de SQLite para poder usar el plugin en Android
   plugins: {
-    CapacitorSQLite: {
-    iosDatabaseLocation: 'Library/CapacitorDatabase',
-    iosIsEncryption: false,
-    iosKeychainPrefix: 'YOUR_APP_NAME',
-    iosBiometric: {
-        biometricAuth: false,
-        biometricTitle : "Biometric login for capacitor sqlite"
+    SplashScreen: {
+      launchShowDuration: 3000,
+      launchAutoHide: true,
+      androidScaleType: 'CENTER_CROP',
+      splashFullScreen: true,
+      splashImmersive: true,
+      backgroundColor: '#ffffff',
     },
-    androidIsEncryption: false,
-    androidBiometric: {
-        biometricAuth : false,
-        biometricTitle : "Biometric login for capacitor sqlite",
-        biometricSubTitle : "Log in using your biometric"
-    },
-    electronIsEncryption: false,
-    electronWindowsLocation: "C:\\ProgramData\\CapacitorDatabases",
-    electronMacLocation: "/Volumes/Development_Lacie/Development/Databases",
-    electronLinuxLocation: "Databases"
-    }
-  }
-  // CGV-FIN
+  },
 };
 
 export default config;
